@@ -31,7 +31,7 @@ async function createManager() {
 		}
 	]);
 
-	manager = new Manager(
+	let manager = new Manager(
 		newManager.name, 
 		newManager.id, 
 		newManager.email, 
