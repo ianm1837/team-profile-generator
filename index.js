@@ -1,9 +1,3 @@
-const inquirer = require('inquirer');
-const fs = require('fs');
-require('./utils/buildTeam.js')
-require('./utils/createManager.js')
-require('./utils/createEngineer.js')
-require('./utils/createIntern.js')
 require('./utils/buildTeam.js')
 require('./utils/buildHTML.js')
 require('./utils/writeToFile.js')

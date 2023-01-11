@@ -34,10 +34,6 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 
 
-Team Member Name
-Email
-GitHub username
-
 ### Team manager info
 Team manager's name
 Employee ID

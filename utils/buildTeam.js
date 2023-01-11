@@ -1,3 +1,9 @@
+const inquirer = require('inquirer');
+
+require('./createEngineer.js');
+require('./createIntern.js');
+require('./createManager.js');
+
 class Team {
 	constructor(manager, engineers, interns) {
 		this.manager = manager;
