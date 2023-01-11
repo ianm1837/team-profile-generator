@@ -1,8 +1,7 @@
 const inquirer = require('inquirer');
-
-require('./createEngineer.js');
-require('./createIntern.js');
-require('./createManager.js');
+const { createManager } = require('./createManager.js');
+const { createEngineer } = require('./createEngineer.js');
+const { createIntern } = require('./createIntern.js');
 
 class Team {
 	constructor(manager, engineers, interns) {
@@ -16,7 +15,7 @@ let manager
 let engineers = [];
 let interns = [];
 
-async function teamBuilder() {
+async function buildTeam() {
 	if (manager === undefined) {
 		createManager();
 	}
@@ -39,4 +38,4 @@ async function teamBuilder() {
 	}
 }
 
-export { teamBuilder, Team };
+export { buildTeam };

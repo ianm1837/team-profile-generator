@@ -1,14 +1,18 @@
-require('./utils/buildTeam.js')
-require('./utils/buildHTML.js')
-require('./utils/writeToFile.js')
+const { buildTeam } = require('./utils/buildTeam.js');
+const { buildHTML } = require('./utils/buildHTML.js');
+const { writeToFile } = require('./utils/writeToFile.js');
 
 async function init() {
+
 	//begin user prompts for building team
 	let team = await buildTeam();
+
 	//build html
 	let html = await buildHTML(team);
+
 	//write html to file
-	await writeToFile(html);
+	writeToFile(html);
+
 }
 
 init();

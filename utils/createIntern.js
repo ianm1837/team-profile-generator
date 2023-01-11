@@ -40,3 +40,5 @@ async function createIntern() {
 
 	return intern;
 }
+
+export { createIntern };

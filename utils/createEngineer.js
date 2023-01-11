@@ -41,4 +41,4 @@ async function createEngineer() {
 	return engineer;
 }
 
-export { createEngineer, Engineer };
+export { createEngineer };

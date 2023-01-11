@@ -40,4 +40,4 @@ async function createManager() {
 	return manager;
 }
 
-export { createManager, Manager };
+export { createManager };
