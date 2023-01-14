@@ -1,4 +1,4 @@
-const Manager = require('../lib/new-classes/manager.js');
+const Manager = require('../lib/classes/manager.js');
 
 test('Manager class test', () => {
 	const manager = new Manager('John Doe', 1, 'john.doe@example.com','officeNumber');

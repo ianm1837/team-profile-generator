@@ -1,4 +1,4 @@
-const Intern = require('../lib/new-classes/intern.js');
+const Intern = require('../lib/classes/intern.js');
 
 test('Intern class test', () => {
 	const intern = new Intern('John Doe', 1, 'john.doe@example.com','schoolName');
