@@ -1,20 +1,20 @@
-const buildTeam = require('./lib/functions/buildTeam');
+const createTeam = require('./lib/functions/createTeam');
 const createHTML = require('./lib/functions/createHTML');
-const writeToFile = require('./lib/functions/writeToFile');
+const createFile = require('./lib/functions/createFile');
 const path = require('path');
 
-const generatedFileName = path.join(__dirname, 'dist', 'team-info.html');
+const filePath = path.join(__dirname, 'dist', 'team-info.html');
 
 async function init() {
 
 	//begin user prompts for building team
-	let team = await buildTeam();
+	let team = await createTeam();
 
 	//build html
 	let html = await createHTML(team);
 
 	//write html to file
-	await writeToFile(generatedFileName, html);
+	await createFile(filePath, html);
 
 	console.log('Your team profile has been created! Look for index.html in the dist folder.')
 
