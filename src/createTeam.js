@@ -2,7 +2,7 @@ const createManager = require('./create-team-members/createManager');
 const createEngineer = require('./create-team-members/createEngineer');
 const createIntern = require('./create-team-members/createIntern');
 const inquirer = require('inquirer');
-const Team = require('../classes/team');
+const Team = require('../lib/classes/team')
 
 async function getUserInput(){
 	let answer = inquirer.prompt([

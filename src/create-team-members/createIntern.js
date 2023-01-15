@@ -1,4 +1,4 @@
-const Intern = require('../../classes/intern')
+const Intern = require('../../lib/classes/intern')
 const inquirer = require('inquirer');
 
 async function createIntern() {

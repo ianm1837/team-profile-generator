@@ -1,6 +1,6 @@
-const createTeam = require('./lib/functions/createTeam');
-const createHTML = require('./lib/functions/createHTML');
-const createFile = require('./lib/functions/createFile');
+const createTeam = require('./src/createTeam');
+const createHTML = require('./src/createHTML');
+const createFile = require('./src/createFile');
 const path = require('path');
 
 const filePath = path.join(__dirname, 'dist', 'team-info.html');
