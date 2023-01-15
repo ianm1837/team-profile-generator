@@ -6,7 +6,7 @@
 
 Generates a webpage for a team consisting of a Manager, any amount of Engineers, and any amount of Interns. This project uses 'Inquirer' to gather user input.
 
-Demonstration Video: 
+Demonstration Video: https://youtu.be/qTrrA7_eSKY
 
 ## Table of Contents
 
