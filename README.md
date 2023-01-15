@@ -1,59 +1,51 @@
-# User Story
+# Team Profile Generator
 
-AS A manager
-I WANT to generate a webpage that displays my team's basic info
-SO THAT I have quick access to their emails and GitHub profiles
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Description
 
-# Acceptance Criteria
+Generates a webpage for a team consisting of a Manager, any amount of Engineers, and any amount of Interns. This project uses 'Inquirer' to gather user input.
 
-GIVEN a command-line application that accepts user input
+Demonstration Video: 
 
-WHEN I am prompted for my team members and their information
-THEN an HTML file is generated that displays a nicely formatted team roster based on user input
+## Table of Contents
 
-WHEN I click on an email address in the HTML
-THEN my default email program opens and populates the TO field of the email with the address
+* [Installation](#installation)
 
-WHEN I click on the GitHub username
-THEN that GitHub profile opens in a new tab
+* [Usage](#usage)
 
-WHEN I start the application
-THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
+* [License](#license)
 
-WHEN I enter the team manager’s name, employee ID, email address, and office number
-THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
+* [Contributing](#contributing)
 
-WHEN I select the engineer option
-THEN I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
+* [Tests](#tests)
 
-WHEN I select the intern option
-THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
+* [Questions](#questions)
 
-WHEN I decide to finish building my team
-THEN I exit the application, and the HTML is generated
+## Installation
 
+'npm i' to install
 
-### Team manager info
-Team manager's name
-Employee ID
-email address
-Office Number
+## Usage
 
-enter menu asking to add another intern or engineer or finish
+'npm run start' to start app. Follow the prompts and the generated webpage will be placed in the dist folder once complete.
 
-### Engineer's info
-Name
-ID
-Email
-Github
+## License
 
-enter menu asking to add another intern or engineer or finish
+Licensed under the MIT license.
+https://opensource.org/licenses/MIT
 
-### Intern info
-Name
-ID
-Email
-School
+## Contributing
 
-enter menu asking to add another intern or engineer or finish
+No contribuition. Feel free to fork.
+
+## Tests
+
+'npm' test to run tests on all classes using 'Jest'
+
+## Questions
+
+For questions please open an issue in this repo.
+
+Visit my github: [ianm1837](https://www.github.com/ianm1837)
+
