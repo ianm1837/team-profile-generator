@@ -1,7 +1,8 @@
-function layout(manager, engineer, intern) {
+function createFullHTML(manager, engineer, intern) {
+
 	return `
 	<!DOCTYPE html>
-	<html data-bs-theme="dark">
+	<html data-bs-theme="dark"  style="scroll-behavior:smooth;">
 		<head>
 			<meta charset="utf-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,11 +28,11 @@ function layout(manager, engineer, intern) {
 			</nav>
 	
 			<main class="container">
-
-				${() => {if (manager) {return manager}}}
-				${() => {if (engineer) {return engineer}}}
-				${() => {if (intern) {return intern}}}
-
+				${manager}
+				${engineer ? `<br/><h1 id="engineers">Team Engineers</h1>` : ""}
+				${engineer ? engineer : ""}
+				${intern ? `<br/><h1 id="interns">Team Interns</h1>` : ""}
+				${intern ? intern : ""}
 			</main>
 	
 	
@@ -44,3 +45,5 @@ function layout(manager, engineer, intern) {
 	</html>
 	`;
 }
+
+module.exports = createFullHTML;
