@@ -1,6 +1,7 @@
-const { buildTeam } = require('./lib/functions/buildTeam');
-const { buildHTML } = require('./lib/functions/createHTML');
-const { writeToFile } = require('./lib/functions/writeToFile');
+const buildTeam = require('./lib/functions/buildTeam');
+const createHTML = require('./lib/functions/createHTML');
+const writeToFile = require('./lib/functions/writeToFile');
+const path = require('path');
 
 const generatedFileName = path.join(__dirname, 'dist', 'team-info.html');
 
@@ -10,7 +11,7 @@ async function init() {
 	let team = await buildTeam();
 
 	//build html
-	let html = await buildHTML(team);
+	let html = await createHTML(team);
 
 	//write html to file
 	await writeToFile(generatedFileName, html);
